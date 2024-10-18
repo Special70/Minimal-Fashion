@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Fashion - About Us</title> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        
+        html, body {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column; 
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            flex: 1; 
+        }
+        
+       
+        .header {
+            background-color: #333;
+            padding: 20px 50px; 
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end; 
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 34px;
+            font-weight: 100;
+            padding-left: 8px; 
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 650;
+            font-size: small;
+            margin: 0;
+            margin-top: 20px;
+        }
+        
+        .nav-links li {
+            margin-left: 85px; 
+        }
+        
+        .nav-links li:first-child {
+            margin-left: 0;
+        }
+        
+        .nav-links a {
+            color: white; 
+            text-decoration: none; 
+            transition: text-decoration 0.3s;
+        }
+        
+        .nav-links a:hover {
+            text-decoration: underline; 
+        }
+        
+        .search-bar {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        
+        .search-bar input {
+            padding: 6px 6px 7px 45px; 
+            border-radius: 20px;
+            border: none;
+        }
+        
+        .search-bar img {
+            width: 20px; 
+            height: auto;
+            position: absolute;
+            left: 10px; 
+            z-index: 1; 
+        }
+
+        .about-container {
+            display: flex; 
+            width: 90%;
+            margin: 50px auto;
+        }
+
+        .about-left, .about-right {
+            width: 50%; 
+            padding: 0 20px; 
+        }
+
+        .about-container h2 {
+            font-family: 'Abhaya Libre', serif;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        .about-content {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 19px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+       
+        .vertical-line {
+            width: 2px; 
+            background-color: #acacac;
+            margin: 0 20px; 
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px; 
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <header class="header">
+        <h1><a href="Index.html" style="color: white; text-decoration: none;">MINIMAL</a></h1>
+        <ul class="nav-links">
+            <li><a href="All.html">All</a></li>
+            <li><a href="Accessories.html">Accessories</a></li>
+            <li><a href="Clothing.html">Clothing</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+        </ul>
+        <div class="search-bar">
+            <img src="searchbutton.png" alt="Search Icon">
+            <input type="text" placeholder="Search">
+        </div>
+    </header>
+
+  
+    <div class="about-container">
+        <div class="about-left">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>At Minimal, we believe simplicity is powerful. We offer high-quality, stylish essentials and versatile fashion pieces for both men and women. Our focus is on creating timeless clothing and accessories that combine clean, minimal designs with modern style.</p>
+                <p>We’re committed to quality, simplicity, and functionality, providing a smooth shopping experience that aligns with a minimalist lifestyle. From classic staples to trendy, youthful pieces, everything we offer is made to elevate your everyday wardrobe with ease and style.</p>
+            </div>
+        </div>
+        
+        
+        <div class="vertical-line"></div> 
+
+        <div class="about-right">
+            <h2>Our Story</h2>
+            <div class="about-content">
+                <p>Minimal was founded by Mikhaiah Lim, a fashion enthusiast passionate about simplicity. Mikhaiah believed that less is more and wanted to create a brand reflecting this philosophy. The goal was to offer high-quality, timeless pieces that seamlessly fit into everyday life.</p>
+                <p>Minimal is known for its commitment to timeless design and quality craftsmanship. Each piece is designed to last, blending style with practicality. We provide versatile clothing and accessories for both men and women, proving that less is truly more.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Minimal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

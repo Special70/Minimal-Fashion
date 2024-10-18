@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Fashion</title> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            padding: 20px 50px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 34px;
+            font-weight: 100;
+            padding-left: 8px;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 650;
+            font-style: normal;
+            font-size: small;
+            margin: 0;
+            margin-top: 20px;
+        }
+        .nav-links li {
+            margin-left: 85px;
+        }
+        .nav-links li:first-child {
+            margin-left: 0;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: text-decoration 0.3s;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .nav-links a:active,
+        .arrival-btn:active,
+        .new-arrivals .products .product:active {
+            color: rgb(53, 53, 53);
+            text-decoration: none;
+        }
+        .search-bar {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input {
+            padding: 6px 6px 7px 45px;
+            border-radius: 20px;
+            border: none;
+        }
+        .search-bar img {
+            width: 20px;
+            height: auto;
+            position: absolute;
+            left: 10px;
+            z-index: 1;
+        }
+        .banner {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            width: 100%;
+            margin-top: 20px;
+            box-sizing: border-box;
+        }
+        .banner img {
+            width: 50%;
+            height: 380px;
+            filter: grayscale(65%);
+        }
+        .section-divider {
+            width: calc(100% - 40px);
+            margin: 30px auto;
+            border: 1px solid rgb(172, 172, 172);
+            box-sizing: border-box;
+        }
+        .new-arrivals {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px 0;
+        }
+        .new-arrivals-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .new-arrivals .arrival-btn {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            font-family: "Abhaya Libre", serif;
+            font-weight: 500;
+            font-style: normal;
+            text-decoration: none;
+        }
+        .arrival-btn:hover {
+            background-color: #313131;
+            transform: scale(1.05);
+            transition: transform 0.4s ease;
+        }
+        .arrow-icon {
+            width: 40px;
+            height: auto;
+            margin-right: 45px;
+        }
+        .new-arrivals .products {
+            display: flex;
+            justify-content: space-around;
+        }
+        .new-arrivals .products .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fcfcfc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 150px;
+            margin-right: 50px;
+            transition: transform 0.4s ease, filter 0.3s ease;
+            text-decoration: none;
+        }
+        .new-arrivals .products .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .new-arrivals .products .product:last-child {
+            margin-right: 0;
+        }
+        .product p {
+            font-family: "Abhaya Libre", serif;
+            font-weight: 700;
+            font-style: normal;
+            color: black;
+        }
+        .new-arrivals .products img {
+            width: 70px;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1><a href="Index.html" style="color: white; text-decoration: none;">MINIMAL</a></h1>
+        <ul class="nav-links">
+            <li><a href="All.html">All</a></li>
+            <li><a href="Accessories.html">Accessories</a></li>
+            <li><a href="Clothing.html">Clothing</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+        </ul>
+        <div class="search-bar">
+            <img src="searchbutton.png" alt="Search Icon">
+            <input type="text" placeholder="Search">
+        </div>
+    </header>
+    <div class="banner">
+        <img src="binifinal.jpg" alt="Banner 1">
+        <img src="bini2.jpg" alt="Banner 2">
+    </div>
+    <hr class="section-divider">
+    <section class="new-arrivals">
+        <div class="new-arrivals-content">
+            <a href="All.html" class="arrival-btn">New Arrival</a>
+            <img class="arrow-icon" src="arrow.png" alt="Arrow Icon">
+            <div class="products">
+                <a href="All.html" class="product">
+                    <img src="bracelet.png" alt="Bracelet">
+                    <p>Bracelet</p>
+                </a>
+                <a href="All.html" class="product">
+                    <img src="cap.png" alt="Trendy Cap">
+                    <p>Trendy Cap</p>
+                </a>
+                <a href="All.html" class="product">
+                    <img src="watch.png" alt="Watch">
+                    <p>Watch</p>
+                </a>
+                <a href="All.html" class="product">
+                    <img src="necklace.png" alt="Necklace">
+                    <p>Necklace</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Minimal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

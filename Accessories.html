@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Fashion - Accessories</title> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+      
+        .header {
+            background-color: #333;
+            padding: 20px 50px; 
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end; 
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 34px;
+            font-weight: 100;
+            padding-left: 8px; 
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 650;
+            font-size: small;
+            margin: 0;
+            margin-top: 20px;
+        }
+        
+        .nav-links li {
+            margin-left: 85px; 
+        }
+        
+        .nav-links li:first-child {
+            margin-left: 0;
+        }
+        
+        .nav-links a {
+            color: white; 
+            text-decoration: none; 
+            transition: text-decoration 0.3s;
+        }
+        
+        .nav-links a:hover {
+            text-decoration: underline; 
+        }
+        
+        .search-bar {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        
+        .search-bar input {
+            padding: 6px 6px 7px 45px; 
+            border-radius: 20px;
+            border: none;
+        }
+        
+        .search-bar img {
+            width: 20px; 
+            height: auto;
+            position: absolute;
+            left: 10px; 
+            z-index: 1; 
+        }
+        
+        .accessories-container {
+            width: 90%;
+            margin: 50px auto;
+        }
+        
+        .accessories-container h2 {
+            font-family: 'Abhaya Libre', serif;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        .accessories-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px; 
+            justify-items: center; 
+            grid-template-rows: auto auto; 
+        }
+        
+        .accessory-item {
+            padding: 15px; 
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 200px; 
+            height: 150px; 
+        }
+        
+       
+        .accessory-item:nth-child(n+4) {
+            margin-top: 100px; 
+        }
+        
+        
+        .accessory-item img {
+            width: 120px; 
+            height: 120px; 
+            object-fit: cover; 
+        }
+        
+        .accessory-item p {
+            font-family: 'Abhaya Libre', serif;
+            font-size: 18px;
+            margin: 8px 0;
+            font-weight: 500;
+        }
+        
+        .accessory-item span {
+            font-size: 16px; 
+            color: rgb(109, 109, 109);
+            display: block; 
+            margin-top: 30px; 
+        }
+        
+        .accessory-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+ 
+    <header class="header">
+        <h1><a href="Index.html" style="color: white; text-decoration: none;">MINIMAL</a></h1>
+        <ul class="nav-links">
+            <li><a href="All.html">All</a></li>
+            <li><a href="Accessories.html">Accessories</a></li>
+            <li><a href="Clothing.html">Clothing</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+        </ul>
+        <div class="search-bar">
+            <img src="searchbutton.png" alt="Search Icon">
+            <input type="text" placeholder="Search">
+        </div>
+    </header>
+
+    
+    <div class="accessories-container">
+        <h2>Accessories</h2>
+        <div class="accessories-grid">
+            <div class="accessory-item">
+                <img src="wallet.png" alt="Wallet">
+                <p>Wallet</p>
+                <span>$38</span>
+            </div>
+            <div class="accessory-item">
+                <img src="belt.png" alt="Leather Belt">
+                <p>Leather Belt</p>
+                <span>$98</span>
+            </div>
+            <div class="accessory-item">
+                <img src="sunglasses.png" alt="Sunglasses">
+                <p>Sunglasses</p>
+                <span>$70</span>
+            </div>
+            <div class="accessory-item">
+                <img src="ring.png" alt="Black Ring">
+                <p>Black Ring</p>
+                <span>$49</span>
+            </div>
+            <div class="accessory-item">
+                <img src="caps.png" alt="Cap">
+                <p>Cap</p>
+                <span>$58</span>
+            </div>
+            <div class="accessory-item">
+                <img src="socks.png" alt="Socks">
+                <p>Socks</p>
+                <span>$65</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Minimal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
